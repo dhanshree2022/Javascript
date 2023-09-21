@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Captcha</title>
+        <style>
+            .error {
+                color: red;
+                font-size: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+        <span id="num1"></span>
+        +
+        <span id="num2"></span>
+        =
+
+        <form action="#" onsubmit="handleSubmit()">
+            <input type="number" name="ans" id="ans" placeholder="Enter Value..">
+            <span class="error" id="ansE"></span>
+            <input type="submit">
+        </form>
+        </div>
+        <script src="js/captcha.js"></script>
+
+    </body>
+</html>

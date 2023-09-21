@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental System</title>
+  <link rel="stylesheet" href="css/dental.css" />
+</head>
+
+<body>
+  <form action="#">
+    <label> Select Treatment</label>
+    <select name="treatment" id="treatment" onchange="handleChangeTreatment()">
+      <option value="0">select</option>
+      <option value="tc">Teeth cleaning</option>
+      <option value="fl">Filling</option>
+      <option value="rc">Root Canal Tratment</option>
+      <option value="rct_co">RCT + Cover</option>
+      <option value="br">Braces/Invisalign</option>
+    </select>
+<br></br>
+    <div class="apt" id="apt">
+      <table border="1">
+        <tr>
+          <th>Treatment</th>
+          <th>Seating</th>
+          <th>Costing</th>
+        </tr>
+
+        <tr>
+          <td id="treat"></td>
+          <td id="seat"></td>
+          <td id="cost"></td>
+        </tr>
+      </table>
+    </div>
+
+    <label> Select Apt Date:</label>
+    <input type="date" name="aptDate" id="aptDate">
+    <br></br>
+    <button onclick="handleAppointment()">Book Appointment</button>
+    <br></br>
+
+    <div id="planDisplay">
+
+    </div>
+
+  </form>
+  <script src="js/dental.js"></script>
+</body>
+
+</html>

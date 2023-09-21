@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Test
+    </title>
+    <link rel="stylesheet" href="css/test1.css">
+
+<body>
+    <form name="convert" onsubmit="return handleSubmit()">
+        <div class="container">
+            <h1>Test</h1>
+            <div class="wrapper">
+                <input type="number" name="num" id="num" placeholder="Enter Value">
+                <span class="error" id="numErr"></span>
+            </div>
+            <div class="wrapper">
+                <select name="convert1" id="convert1">
+                    <option value="0">Select</option>
+                    <option value="cm">CM</option>
+                    <option value="m">Meter</option>
+                    <option value="km">KM</option>
+                </select>
+                <span class="error" id="convert1Err">
+            </div>
+
+            <div class="wrapper">
+                <select name="convert2" id="convert2">
+                    <option value="1">---Select---</option>
+                    <option value="cm1">CM</option>
+                    <option value="m1">Meter</option>
+                    <option value="km1">KM</option>
+                </select>
+                <span class="error" id="convert2Err">
+
+            </div>
+
+            <div class="wrapper">
+                <input type="Submit" value="Submit" >
+            </div>
+
+            <p><span id="result">Ans is:</span></p>
+
+
+            <div id="result"></div>
+        </div>
+    </form>
+</body>
+<script src="js/test1.js"></script>
+</head>
+
+</html>

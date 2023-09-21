@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+        }
+        </style>
+
+</head>
+<body>
+ 
+    <form name="connectform" action="#" onsubmit="return handleSubmit()">
+
+        <input type="text" name="maths" id="maths" placeholder="Plese Enter maths marks">
+        <span class="error" id="mathsErr"></span>
+        <br><br>
+
+        <input type="text" name="science" id="science" placeholder="Plese Enter science marks">
+        <span class="error" id="scienceErr"></span>
+        <br><br>
+
+        <input type="text" name="english" id="english" placeholder="Plese Enter English marks">
+        <span class="error" id="englishErr"></span>
+        <br><br>
+        
+        
+        <input type="submit">
+        <p><span id="result">Ans is:</span></p>
+    </form>
+    <script src="js/percentage.js"></script>
+    </body>
+</html>

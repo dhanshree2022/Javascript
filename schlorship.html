@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scholarship </title>
+    <link rel="stylesheet" href="css/scholarship.css">
+</head>
+<body>
+
+     <form action="#" name="scholarship" id="scholarship"  onsubmit=" return handleSubmit()">
+        <select name="cast" id="cast">
+            <option value="0">--select--</option>
+            <option value="o">OPEN</option>
+            <option value="ob">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+        </select>
+        <span class="error" id="castErr"></span>
+        <br>
+        <br>
+        <input type="text" name="fees" id="fees" placeholder="Enter fees">
+        <span class="error" id="feesErr"></span>
+        <br>
+        <br>
+
+        <input type="text" name="cgpa" id="cgpa" placeholder="Enter CGPA">
+        <br><span class="error" id="cgpaErr"></span>
+        <br>
+        <input type="submit">
+        <p><span id="result">Ans is:</span></p>
+    </form>
+
+
+    <script src="js/scholarship.js"></script>
+    
+</body>
+</html>

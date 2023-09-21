@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="css/calc.css" />
+  </head>
+  <body>
+    <!-- <form action="#" onclick="handleSubmit()"> -->
+    <form id="interestForm">
+
+    <div class="container">
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="principal">Principal:</label>
+          <input type="text" name="principal" id="principal" placeholder="Principal" required/>
+          <span id="principalError" class="error"></span><br>
+
+        </div>
+        <div class="wrapper">
+          <label for="rate">Rate:</label>
+          <input type="text" name="rate" id="rate" placeholder="Rate" required/>
+          <span id="rateError" class="error"></span><br>
+
+        </div>
+      </div>
+      <label for="time">Time:</label>
+      <div class="time-wrapper">
+        <input type="text" name="time" id="time" placeholder="Time" />
+        <span id="timeError" class="error"></span><br>
+
+        <select name="duration" id="duration">
+          <option value="0">Select</option>
+          <option value="y">Year</option>
+          <option value="m">Month</option>
+        </select>
+        <span class="error" id="durationErr"></span>
+
+      </div>
+      <input type="button" name="Calculate" value="Calculate" id="calculate" onclick="calculateInterest()">
+      <!-- <input type="button" name="Calculate" value="Calculate" id="calculate"> -->
+
+      <div id="result"></div>
+    </div>
+    </form>
+
+    <script src="js/intersestcal.js"></script>
+  </body>
+</html>

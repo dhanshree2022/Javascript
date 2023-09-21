@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interest Calculator</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Interest Calculator</h1>
+    <form id="interestForm">
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" name="principal" required>
+        <span id="principalError" class="error"></span><br>
+
+        <label for="rate">Interest Rate (% per year):</label>
+        <input type="number" id="rate" name="rate" required>
+        <span id="rateError" class="error"></span><br>
+
+        <label for="time">Time Period (in years):</label>
+        <input type="number" id="time" name="time" required>
+        <span id="timeError" class="error"></span><br>
+
+        <button type="button" onclick="calculateInterest()">Calculate</button>
+    </form>
+
+    <p>Simple Interest: <span id="result"></span></p>
+
+    <script src="js/ical.js">
+        
+    </script>
+</body>
+</html>

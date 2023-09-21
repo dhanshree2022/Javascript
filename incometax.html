@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+        }
+        </style>
+    <script src="js/incometax.js"></script>
+    
+</head>
+<body>
+
+    <form name="incometaxform" action="#" onsubmit="return  handleSubmit()">
+        <input type="number" id="income" name="income" placeholder="Enter Income">
+        <span class="error" id="incomeErr"></span>
+
+
+        <br><br>
+        
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <table class="table table-dark table-sm">
+        
+      </table>
+
+    <table border="">
+        <tr>
+            <th>Income-tax slab</th>
+            <th>Income-tax rate</th>
+            <th>Income-tax</th>
+        </tr>
+        <tr>
+            <td>Up to 3 lakh</td>
+            <td>Nill</td>
+            <td id="slab1"></td>
+        </tr>
+
+        <tr>
+            <td>3 lakh to 6 lakh</td>
+            <td>5%</td>
+            <td id="slab2"></td>
+        </tr>
+
+        <tr>
+            <td>6 lakh to 9 lakh</td>
+            <td>10%</td>
+            <td id="slab3"></td>
+        </tr>
+
+        <tr>
+            <td>9 lakh to 12 lakh</td>
+            <td>15%</td>
+            <td id="slab4"></td>
+        </tr>
+
+        <tr>
+            <td>12 lakh to 15 lakh</td>
+            <td>20%</td>
+            <td id="slab5"></td>
+        </tr>
+
+        <tr>
+            <td>Above 15 lakh</td>
+            <td>30%</td>
+            <td id="slab6"></td>
+        </tr>
+    </table>
+
+    <p>Total Tax: <span id = "total"></span></p>
+
+    
+</body>
+</html>

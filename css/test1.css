@@ -1,0 +1,11 @@
+.error {
+color: red;
+font-weight: bold;
+}
+.container{
+    background-color: #fff;
+}
+.input-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
