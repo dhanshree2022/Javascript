@@ -54,6 +54,58 @@
 
 
 let data = [25,8,'dhanshu',85,'surat'];
+let data1 = [99,100,8,64,1];
+let data2 =['dhanshu','soni','dolly','akshu'];
+
+// let ans = data1.reverse();
+// console.log(ans)
+
+// let ans = data1.sort((a,b)=>b-a);
+// console.log(ans)
+// let ans = data1.sort((a,b)=>a-b);
+// console.log(ans)
+// let ans = data1.sort();
+// let ans1 = data2.sort();
+// console.log(ans1);
+// console.log(ans);
+
+// let ans = data1.fill(0, 2);
+// console.log(ans)
+
+// let ans = data1.findIndex((v)=> v === 100);
+// console.log(ans);
+
+// let ans = data1.includes(101);
+// console.log(ans)
+
+// let ans = data1.every((v) => v > 0);
+// console.log(ans)
+// let ans = data.indexOf('dhanshu');
+// console.log(ans);
+
+// let ans = data.lastIndexOf('dhanshu');
+// console.log(ans);
+
+
+// data.map((v, i)=>{
+//     if(v > 15){
+//         console.log(v)
+//     }
+// })
+// let ans = data.map((v, i)=>{
+//     if(v > 15){
+//         return v;
+//     } else {
+//         return 0;
+//     }
+// });
+// console.log(ans);
+
+// let ans1 = data.filter((v, i) => v > 15 && v < 50);
+// console.log(ans1);
+
+// let answer = data1.reduce((acc, v, i) => acc + v, 0);
+// console.log(answer)
 
 // console.log(data);
 // console.log(data[3]);
@@ -90,5 +142,24 @@ let data = [25,8,'dhanshu',85,'surat'];
 // data.shift();
 // console.log(data)
 
-data.splice(2,3);
-console.log(data)
+// data.splice(2,3);
+// console.log(data)
+
+// let ans = Array.isArray(data);
+// console.log(ans);
+
+// let ans = data.some((v)=> v>50);
+// console.log(ans);
+
+// let ans = data.find((v)=> v>50);
+// console.log(ans);
+
+// let fullname = "Dhanshree Ravindra Shinde";
+// let ans = fullname.split(" ");
+// console.log(ans);
+
+// let ans = data.slice(2,4);
+// console.log(ans);
+
+// let ans = data.toString();
+// console.log(ans);

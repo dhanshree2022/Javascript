@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Insurance</title>
+    <link rel="stylesheet" href="css/test2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;"> Insurance System</h1>
+    </div>
+    <div class="form" style="text-align: justify;">
+        <form action="#">
+
+
+                <div class="wrapper">
+                    <label>Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+
+                <div class="wrapper">
+                    <label>Date Of Birth:</label>
+                    <input type="date" name="dob" id="dob" >
+                </div>
+
+                <div class="wrapper">
+                    <label>Mobile No:</label>
+                    <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile Number">
+                </div>
+
+                <div class="wrapper">
+                    <label> Occupation </label>
+                    <input type="radio" name="occupation" value="salaried"> Salaried
+                    <input type="radio" name="occupation" value="self"> Self-Employed
+                </div>
+
+                <div>
+                    <label>Annual Income</label>
+                    <select name="income" id="income" onchange="handleIncome()">
+                        <option value="0">Select</option>
+                        <option value="1">0-3 Lakh</option>
+                        <option value="2">3-5 lakh</option>
+                        <option value="3">5-10 lakh</option>
+                        <option value="4">above 10 lakh</option>
+
+                      </select>
+                      
+                </div>
+
+                <div>
+                    <label>Insurance Amount</label>
+                    <input type="text" name="insurance" id="insurance" placeholder="Insurance Amount">
+                    <span class="error" id="insuranceErr"></span>
+                </div>
+
+                <div class="wrapper">
+                    <label> Smoke </label>
+                    <input type="radio" name="smoke" value="yes"> Yes
+                    <input type="radio" name="smoke" value="no"> No
+                </div>
+
+
+                <div>
+                    <button onclick="handleSubmit()"> Submit</button>
+                </div>
+                
+
+
+
+                <div id="displayData"></div>
+
+        </form>
+    </div>
+    <script src="js/test2.js"></script>
+</body>
+
+</html>
