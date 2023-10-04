@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> JavaScript Events </title>
-    </head>
-    <body onload="window.alert('Page successfully loaded');">  
-        <h1> JavaScript Events </h1>
-        <p> Onchange Event </p>
-        Enter Name: <input type="text" id="fname" onchange="upperCase()">
-        <br></br>
 
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+<head>
+    <title> JavaScript Events </title>
+</head>
+
+<body onload="window.alert('Page successfully loaded');">
+    <h1> JavaScript Events </h1>
+    <p> Onchange Event </p>
+    Enter Name: <input type="text" id="fname" onchange="upperCase()">
+    <br></br>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
         style="background-color:#71d6ef;width:120px;height:20px;padding:40px;">
         Mouse Over Me</div>
 
-        <br></br>
-        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
-style="background-color:#efafa7;width:90px;height:20px;padding:40px;">
-Click Me</div>
+    <br></br>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#efafa7;width:90px;height:20px;padding:40px;">
+        Click Me</div>
 
 
-        <h1>FocusEvent</h1>
-        <h2> Enter something here</h2>
-        <input type="text" id="input1" onfocus="focusevent()" />
+    <h1>FocusEvent</h1>
+    <h2> Enter something here</h2>
+    <input type="text" id="input1" onfocus="focusevent()" />
 
-        <h2> KeyDownEvent</h2>
-        <input type="text" id="input1" onkeydown="keydownevent()" />
+    <h2> KeyDownEvent</h2>
+    <input type="text" id="input1" onkeydown="keydownevent()" />
 
-        <form>  
-            <h1>ClickEvent</h1>
-            <input type="button" onclick="clickevent()" value="Click"/>  
-        </form>  
+    <form>
+        <h1>ClickEvent</h1>
+        <input type="button" onclick="clickevent()" value="Click" />
+    </form>
 
-        <h1 onclick="changeText(this)">Click Here</h1>
+    <h1 onclick="changeText(this)">Click Here</h1>
 
 
 
-        <script src="js/events.js"></script>
+    <script src="js/events.js"></script>
 
-    </body>
+</body>
+
 </html>
