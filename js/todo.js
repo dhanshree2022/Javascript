@@ -4,7 +4,7 @@ const handleSubmit = () => {
     event.preventDefault();
     console.log("dhanshuuuu");
 
-    let data = document.getElementById("name").value;
+    let data = document.getElementById("task").value;
 
     if (update_Index != null || update_Index === 0) {
         console.log('Update Data sucessfully');
@@ -14,7 +14,7 @@ const handleSubmit = () => {
         console.log('Add Data Sucessfully');
         arr.push(data);
     }
-    document.getElementById("name").innerHTML = '';
+    document.getElementById("task").innerHTML = '';
  
     DisplayData();
 }
@@ -27,18 +27,28 @@ const handleEdit = (index) => {
     console.log(index);
    
     update_Index = index;
-    document.getElementById("name").value = arr[index];
+    document.getElementById("task").value = arr[index];
 
     // DisplayData();
 }
-const DisplayData = () => {
-    let print = "<ul>";
-    arr.map((value, index) => {
-        print =
-            print +
-            `<li>${value}<button onclick = handleEdit(${index})> Edit </button><button onclick = handleDelete(${index})> remove </button></li>`;
-    })
-    print = print + "</ul>";
+// const DisplayData = () => {
+//     let print = "<ul>";
+//     arr.map((value, index) => {
+//         print =
+//             print +
+//             `<li>${value}<button onclick = handleEdit(${index})> Edit </button><button onclick = handleDelete(${index})> remove </button></li>`;
+//     })
+//     print = print + "</ul>";
 
-    document.getElementById("namebtn").innerHTML = print;
+//     document.getElementById("namebtn").innerHTML = print;
+// }
+
+const DisplayData =()=>{
+    let ulElem = document.getElementById("display");
+    let liElem = document.createElement("li");
+
+    let liText = document.createTextNode("10");
+
+    liElem.appendChild(liText);
+    ulElem.appendChild(liElem)
 }
