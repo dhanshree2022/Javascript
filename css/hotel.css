@@ -1,0 +1,114 @@
+/* Apply basic styling to the form container */
+/* .container {
+    width: 500px;
+    margin: 5px 5px 5px 5px;
+    padding: 20px;
+    border: 1px solid #090808;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .error {
+    color: red;
+    font-size: 90%;
+} */
+
+
+/* body,
+h1,
+form,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+} */
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin: 5px 5px 5px 5px;
+  padding: 20px;
+  border: 1px solid #090808;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 90%;
+
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label,
+select,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select,
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}
+
+/* table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+} */
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}

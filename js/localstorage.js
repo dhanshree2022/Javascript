@@ -1,12 +1,12 @@
 const saveData = () => {
     let data = document.getElementById('data').value;
-    localStorage.setItem('myData', data);
+    localStorage.setItem('myData', data); //key value pair
     console.log('Data saved to local storage.');
 }
 
 // Function to load data from local storage
 const loadData = () => {
-    let data = localStorage.getItem('myData');
+    let data = localStorage.getItem('myData'); //key
     if (data) {
         document.getElementById('data').value = data;
         console.log('Data loaded from local storage.');
@@ -18,15 +18,15 @@ const loadData = () => {
 // Function to clear data from local storage
 const clearData = () => {
     localStorage.removeItem('myData');
-    document.getElementById('data').value = '';
+    document.getElementById('data').value = '';//key
     console.log('Data cleared from local storage.');
 }
 
 
-// localStorage.setItem("city", "Noida");  //add city
-// const res = localStorage.getItem("city"); // get city  
-// localStorage.removeItem("city");  //remove from local storage
-// localStorage.clear(); //clear storage
+localStorage.setItem("city", "Noida");  //add city
+const res = localStorage.getItem("city"); // get city  
+localStorage.removeItem("city");  //remove from local storage
+localStorage.clear(); //clear storage
 
 
 sessionStorage.setItem("name","Dhanshu");  //save data into sesson storage

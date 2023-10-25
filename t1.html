@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var nameError = document.getElementById("nameError");
+            var emailError = document.getElementById("emailError");
+            var isValid = true;
+
+            // Validate name
+            if (name === "") {
+                nameError.innerHTML = "Name is required";
+                isValid = false;
+            } else {
+                nameError.innerHTML = "";
+            }
+
+            // Validate email
+            if (email === "") {
+                emailError.innerHTML = "Email is required";
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                emailError.innerHTML = "Invalid email format";
+                isValid = false;
+            } else {
+                emailError.innerHTML = "";
+            }
+
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            // Simple email validation using a regular expression
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+</body>
+</html>

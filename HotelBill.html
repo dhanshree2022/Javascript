@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hotel.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hotel Bill Collection System</h1>
+
+        <form id="hotelForm" onsubmit="return submitForm()">
+            <!-- <form id="myForm" onsubmit="return validateForm()"> -->
+
+            <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+                <span class="error" id="dateErr"></span>
+            <br></br>
+
+            <label for="table">Table</label>
+                <select name="table" id="table">
+                    <option value="0">--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <span class="error" id="tableErr"></span>
+            <br></br>
+
+            <label for="food">Food</label>
+                <select name="food" id="food">
+                    <option value="0">--select--</option>
+                    <option value="250">Panjabi</option>
+                    <option value="150">Chinees</option>
+                    <option value="200">South Indian</option>
+                </select>
+                <span class="error" id="foodErr"></span>
+            <br></br>
+
+            <label for="person">No.Of Persons</label>
+                <input type="number" id="person" name="person">
+                <span class="error" id="personErr"></span>
+            <br></br>
+
+                <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <br></br>
+
+
+    <table id="disp" border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Table </th>
+                <th>Food </th>
+                <th>No. Of Person </th>
+                <th>Total </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+
+    <!-- <div id="table-container"></div> -->
+
+
+    <!-- <table id="disp">
+        <tr>
+            <th> Date </th>
+            <th> Table </th>
+            <th> Food </th>
+            <th> No.Of Persons </th>
+            <th> Total </th>
+            <th> Edit</th>
+            <th>Delete</th>
+        </tr>
+    </table> -->
+
+    <!-- <div id="disp"></div> -->
+
+    <!-- <script src="js/hotelbill.js"></script> -->
+    <script src="js/hotel.js"></script>
+</body>
+
+</html>
